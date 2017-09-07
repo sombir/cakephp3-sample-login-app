@@ -8,7 +8,8 @@ $userSession = $session['User'];
 	<?php
 		if (isset($userSession['username'])) {
 			$username = $userSession['username'];
-			echo "Hello <b id='welcome'><i>" . $username . "</i> !</b>";
+			echo "Hello <b id='welcome'><i>" . $username . "</i> !</b><br/>";
+			echo "click here to <a href='/users/add'>add new user</a>";
 		} else {
 			header("location: home");
 		}
